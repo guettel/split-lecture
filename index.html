@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  
+  
+  <!-- ================================================================================================= -->
+  <title>Lecture 1: Programming with Python</title>
+  <script>
+	var notebookUrl = 'example-notebook.html';
+	var ytVideoId = 'yZH74R58h40';
+	var tslist = [
+	  '00:00 Programming-with-Python', 
+	  '04:05 Contents:', 
+	  '04:38 An-algorithm', 
+	  '07:19 A-program',
+	  '09:24 Types-of-programming-languages-(implementations)',
+	  '11:42 Python-versions',
+	  '12:37 An-example:-Hello-world',
+	  '17:37 Comments',
+	  '22:30 Input', 
+	  '25:41 Variables',
+	  '28:31 How-do-variables-work?',
+	  '32:06 On-the-simple-types',
+	  '35:18 Converting-basic-types',
+	  '40:19 More-on-the-assignments',
+	  '47:18 Some-special-operators',
+	  '50:43 Recap',
+	  '54:12 Real-number-trouble',
+	  '59:28 Use-integers-whenever-possible',
+	  '64:54 Do-these-tiny-errors-really-matter?',
+	  '65:28 Bottom-line'
+	  ];
+  </script>	
+  <!-- ================================================================================================= -->
+
+
+
+
+  <style>
+	html, body {
+	  height: 100%;
+	  font-family: sans-serif;
+	  padding: 0;
+	  margin: 0;
+	  overflow: auto;
+	  overflow-y: hidden;
+	}
+
+	.page-container {
+	  margin:0; padding:0; height:100%
+	}
+
+	.panel-container {
+	  margin:0; padding:0;
+	  height:100%;
+	  display: flex;
+	  flex-direction: row;
+	  border: 0px solid black;
+	  overflow: hidden;
+	  /* avoid browser level touch actions 
+	  xtouch-action: none; */
+	}
+
+	.panel-left {
+	  flex: 0 0 auto;
+	  /* only manually resize */
+	  padding: 0;
+	  width: 42%;
+	  min-width: 150px;
+	  max-width:80%;
+	  white-space: nowrap;
+	  background: #000;
+	  color:white; border:0;
+	}
+
+	.splitter {
+	  flex: 0 0 auto;
+	  width: 7px;  
+	  background-color:#999;
+	  min-height: 200px;
+	  cursor:col-resize;
+	}
+	.splitter:hover { background-color:#6666ff }
+
+	.panel-right {
+	  flex: 1 1 auto;
+	  /* resizable */
+	  padding: 0;
+	  width: 100%;
+	  min-height: 200px;
+	  min-width: 200px;
+	  height:100%;
+	  background: #eee;
+	  border:0;
+	}
+	#player { width:100%; height:50%; margin:0; padding:0 }
+	#linklist {
+		font-size:90%; 
+		margin:0; height:49.5%; 
+		padding:0px; width:calc(100%-10px); 
+		overflow:hidden; line-height:1.5em }
+	#linklist:hover {overflow-y:scroll}
+	#linklist a { display:block; color:#aaa; text-decoration:none; padding:3px 0px 3px 5px; margin:0; width:100% }
+	#linklist a:hover { background-color:#aa3333; }
+	#linklist a.active {background-color:#ff6060; color:#000 }
+  </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <div class="panel-container">
+
+            <div class="panel-left">
+				<div id="player">
+				</div><br>
+				<div id="linklist"></div>
+            </div>
+
+            <div class="splitter">
+            </div>
+
+            <iframe id="nb" class="panel-right" allow="display; encrypted-media">
+            </iframe>
+        </div>
+
+    </div>
+
+<script defer src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.5.1/dist/jquery.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/jquery-resizable-dom@0.35.0/dist/jquery-resizable.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/guettel/split-lecture/split-lecture.js"></script>
+
+</body>
+</html>
