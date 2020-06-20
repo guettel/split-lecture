@@ -23,12 +23,12 @@ var player;
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
 	  videoId: ytVideoId,
+	  modestbranding: 1,
+	  rel: 0,
+	  playsinline: 1,
 	  events: {
 		'onReady': onPlayerReady,
-		'onStateChange': onPlayerStateChange,
-		'modestbranding': 1,
-		'rel': 0,
-		'playsinline': 1
+		'onStateChange': onPlayerStateChange
 	  }
 	});
 }
