@@ -27,7 +27,8 @@ function onYouTubeIframeAPIReady() {
 		'onReady': onPlayerReady,
 		'onStateChange': onPlayerStateChange,
 		'modestbranding': 1,
-		'rel':0
+		'rel': 0,
+		'playsinline': 1
 	  }
 	});
 }
