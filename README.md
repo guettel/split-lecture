@@ -13,7 +13,11 @@
 1. On your webserver, create a new folder.
 2. In this folder, place your Jupyter Notebook file as an HTML export. (In Jupter, view the notebook and go to File -> Download as -> html to produce this HTML file.)
 3. In that same folder, place the files `index.html` and `custom.css` from the repository.
-4. Open `index.html` and edit the highlighted variables.
+4. Open `index.html` and edit lines 11-37 as follows:
+   * line 11: insert the title of your lecture
+   * line 13: change the value of `notebookUrl` to the name the exported HTML file from step 2. 
+   * line 14: change the value of `ytVideoId` to the id of your YouTube video. Example: If your video URL is https://www.youtube.com/watch?v=yZH74R58h40, then the id is `yZH74R58h40`
+   * line 15ff: change the timestamps and link names so that they coincide with the timings in the YouTube video and the anchor links in the exported HTML file from step 2. In order to obtain the anchor links, simply hover over a heading in the HTML file and read off the URL part following the `#` symbol.
 
 That's it. I hope you find **split-lecture** useful for your teaching. Feel free to modify it to your needs. 
 
