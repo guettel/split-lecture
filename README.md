@@ -1,6 +1,6 @@
 # split-lecture
 
-**split-lecture** is a simple tool to show YouTube videos alongside Jupyter Notebooks and keep them synchronised. It has been built to support blended learning for a Python programming course delivered at the University of Manchester. 
+**split-lecture** is a simple tool to synchronize YouTube videos and Jupyter Notebooks. It has been built to support blended learning for a Python programming course delivered at the University of Manchester, but can be used for other courses as well. The only requirement is that the lecture notes are available in HTML format and navigatable with anchor links. 
 
 [**View an example lecture**](https://personalpages.manchester.ac.uk/staff/stefan.guettel/split-lecture/)
 
@@ -22,3 +22,7 @@
 That's it. I hope you find **split-lecture** useful for your teaching. Feel free to modify it to your needs. 
 
 Any comments and feedback are appreciated, either by raising them as *issues* or dropping me an email: stefan.guettel@manchester.ac.uk
+
+## Acknowledgements
+
+Thanks to the jQuery team and Rick Strahl for the jQuery Resizable plugin. Thanks also to many students who have given useful feedback.
